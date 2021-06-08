@@ -18,38 +18,41 @@
 
 <body>
     <header class="header-nav">
-        <div class="container main-nav">
-            <!-- Логотип -->
-            <a href="./index.html" class="logo"><span class="logo-beginning">Web</span>studio</a>
-            <!-- Навигация -->
-            <nav>
-                <ul class="site-nav">
-                    <li class="item"><a href="./index.html" class="nav ">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav nav-active">Портфолио</a></li>
-                    <li class="item"><a href="" class="nav">Контакты</a></li>
+        <div class="main-box">
+            <div class="container main-nav">
+                <!-- Логотип -->
+                <a href="./index.html" class="logo links" lang="en"><span class="logo-beginning">Web</span>studio</a>
+                <!-- Навигация -->
+                <nav>
+                    <ul class="site-nav">
+                        <li class="item"><a href="./index.html" class="nav  links">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="nav nav-active links">Портфолио</a></li>
+                        <li class="item"><a href="" class="nav links">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts-nav">
+                    <li class="item">
+                        <a href="mailto:info@example.com" target="_blank" class="contacts links">
+                            <svg class="contact-img-envelope">
+                                <use href="./img/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="tel:+380991111111" target="_blank" class="contacts contact-link-tel links">
+                            <svg class="contact-img-tel">
+                                <use href="./img/sprite.svg#icon-tel"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contacts-nav">
-                <li class="item">
-                    <a href="mailto:info@example.com" target="_blank" class="contacts">
-                        <svg class="contact-img-envelope">
-                            <use href="./img/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-            
-                <li class="item">
-                    <a href="tel:+380991111111" target="_blank" class="contacts contact-link-tel">
-                        <svg class="contact-img-tel">
-                            <use href="./img/sprite.svg#icon-tel"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
+    
         </div>
-
+    
     </header>
     <main>
         <section class="section gallery-section">
@@ -221,19 +224,20 @@
             <!-- Подвал сайта -->
             <div class="footer-box">
                 <address class="item">
-                    <a href="./index.html" class="footer-logo"><span class="logo-beginning">Web</span>studio</a>
+                    <a href="./index.html" class="footer-logo links"><span class="logo-beginning">Web</span>studio</a>
     
-                    <a href="https://goo.gl/maps/j5ftLa1bmfd7tv1o9" target="_blank" class="address">г. Киев, пр-т Леси
+                    <a href="https://goo.gl/maps/j5ftLa1bmfd7tv1o9" target="_blank" class="address links">г. Киев, пр-т Леси
                         Украинки, 26</a>
     
                     <ul>
                         <li class="footer-email"><a href="mailto:info@example.com" target="_blank"
-                                class="footer-contacts">info@example.com</a></li>
-                        <li class="footer-teleph"><a href="tel:+380991111111" target="_blank" class="footer-contacts">+38
+                                class="footer-contacts links">info@example.com</a></li>
+                        <li class="footer-teleph"><a href="tel:+380991111111" target="_blank"
+                                class="footer-contacts links">+38
                                 099 111 11 11</a></li>
                     </ul>
                 </address>
-                <div>
+                <div class="footer-networks-box">
                     <p class="footer-paragraph">присоединяйтесь</p>
                     <ul class="footer-networks">
                         <li class="footer-network-item ">
@@ -266,6 +270,22 @@
                         </li>
                     </ul>
                 </div>
+                <form action="#" class="footer-form">
+                    <p class="footer-form-header">Подпишитесь на рассылку</p>
+                    <div class="footer-form-box">
+                        <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
+                        <button type="submit" class="footer-form-btn">
+                            <span class="footer-form-btn-paragraph">
+                                Подписаться
+                            </span>
+    
+                            <svg class="icon-send">
+                                <use href="./img/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+    
+                </form>
             </div>
         </div>
     </footer>

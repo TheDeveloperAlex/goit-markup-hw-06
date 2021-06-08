@@ -21,18 +21,18 @@
         <div class="main-box">
                 <div class="container main-nav">
                 <!-- Логотип -->
-                <a href="./index.html" class="logo" lang="en"><span class="logo-beginning">Web</span>studio</a>
+                <a href="./index.html" class="logo links" lang="en"><span class="logo-beginning">Web</span>studio</a>
                 <!-- Навигация -->
                 <nav>
                     <ul class="site-nav">
-                        <li class="item"><a href="./index.html" class="nav nav-active">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html" class="nav">Портфолио</a></li>
-                        <li class="item"><a href="" class="nav">Контакты</a></li>
+                        <li class="item"><a href="./index.html" class="nav nav-active links">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="nav links">Портфолио</a></li>
+                        <li class="item"><a href="" class="nav links">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="contacts-nav">
                     <li class="item">
-                        <a href="mailto:info@example.com" target="_blank" class="contacts">
+                        <a href="mailto:info@example.com" target="_blank" class="contacts links">
                             <svg class="contact-img-envelope">
                                 <use href="./img/sprite.svg#icon-envelope"></use>
                             </svg>
@@ -41,7 +41,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="tel:+380991111111" target="_blank" class="contacts contact-link-tel">
+                        <a href="tel:+380991111111" target="_blank" class="contacts contact-link-tel links">
                             <svg class="contact-img-tel">
                                 <use href="./img/sprite.svg#icon-tel"></use>
                             </svg>
@@ -362,19 +362,19 @@
             <!-- Подвал сайта -->
             <div class="footer-box">
                 <address class="item">
-                    <a href="./index.html" class="footer-logo"><span class="logo-beginning">Web</span>studio</a>
+                    <a href="./index.html" class="footer-logo links"><span class="logo-beginning">Web</span>studio</a>
 
-                    <a href="https://goo.gl/maps/j5ftLa1bmfd7tv1o9" target="_blank" class="address">г. Киев, пр-т Леси
+                    <a href="https://goo.gl/maps/j5ftLa1bmfd7tv1o9" target="_blank" class="address links">г. Киев, пр-т Леси
                         Украинки, 26</a>
 
                     <ul>
                         <li class="footer-email"><a href="mailto:info@example.com" target="_blank"
-                                class="footer-contacts">info@example.com</a></li>
-                        <li class="footer-teleph"><a href="tel:+380991111111" target="_blank" class="footer-contacts">+38
+                                class="footer-contacts links">info@example.com</a></li>
+                        <li class="footer-teleph"><a href="tel:+380991111111" target="_blank" class="footer-contacts links">+38
                                 099 111 11 11</a></li>
                     </ul>
                 </address>
-                <div>
+                <div class="footer-networks-box">
                     <p class="footer-paragraph">присоединяйтесь</p>
                     <ul class="footer-networks">
                         <li class="footer-network-item ">
@@ -407,20 +407,78 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <form action="#" class="footer-form">
+                <form action="#" class="footer-form">
                     <p class="footer-form-header">Подпишитесь на рассылку</p>
-                    <input type="email" name="user-email" required>
-                </form> -->
+                    <div class="footer-form-box">
+                        <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
+                        <button type="submit" class="footer-form-btn">
+                            <span class="footer-form-btn-paragraph">
+                                 Подписаться
+                            </span>
+                           
+                            <svg class="icon-send">
+                                <use href="./img/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </form>
             </div>
         </div>
     </footer>
-    <div  class="backdrop is-hidden" data-modal>
+    <div  class="backdrop  is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                <svg class="close-img">
                    <use href="./img/sprite.svg#icon-close" ></use>
                </svg>
             </button>
+            <!-- ============ -->
+            <form action="" class="modal-form">
+                <p class="modal-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+                <label   class="modal-form-box">
+                    <span class="modal-input-description">Имя</span>
+                    <span class="modal-input-box">
+                        <input type="text" name="user-name" class="modal-input" required>
+                    <svg class="modal-input-svg-men">
+                        <use href="./img/sprite.svg#icon-men"></use>
+                    </svg>
+                    </span>
+                    
+                </label>
+                <label  class="modal-form-box">
+                    <span class="modal-input-description">Телефон</span>
+                    
+                    <span class="modal-input-box">
+                        <input type="tel" name="user-tel" class="modal-input"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-999-99-99" required>
+                        <svg class="modal-input-svg-telephone">
+                            <use href="./img/sprite.svg#icon-telephone"></use>
+                        </svg>
+                    </span>
+                    
+                </label>
+                <label  class="modal-form-box">
+                    <span class="modal-input-description">Почта</span>
+                    
+                    <span class="modal-input-box">
+                        <input type="email"  class="modal-input" required>
+                        <svg class="modal-input-svg-mail">
+                            <use href="./img/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                    
+                </label>
+                <label  class="modal-form-box-textarea">
+                    <span class="modal-input-description">Комментарий</span>
+                    <textarea name="user-massage" id="user-massage"  class="modal-textarea" placeholder="Введите текст" required></textarea>
+                </label>
+                <input name="user-policy" id="user-policy" type="checkbox" class="visually-hidden modal-form-check" required>
+                <label for="user-policy" class="modal-form-checkbox-desc">
+                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>     
+                </label>
+                <button type="submit" class="modal-btn" id="">Отправить</button>
+            </form>
+            
         </div>
     </div>
     <script src="./js/modal.js"></script>
