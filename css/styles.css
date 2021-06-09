@@ -1074,18 +1074,17 @@ address {
   cursor: pointer;
   border: 2px solid var(--header-color);
   border-radius: 2px;
-  transition-property: border-color, background-color;
+  transition-property: border-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-  /* background-image: url("./img/index/modal/no optimis/tick-icon.jpg");
-  background-size: contain; */
+  /* background-image: url("../img/index/modal/check.svg"); */
+  background-size: cover;
 }
 
 .modal-form-check:checked + .modal-form-checkbox-desc::before {
-  background-color: var(--animation-color);
-  /* background-image: url("./img/index/modal/no optimis/tick-icon.jpg"); */
   border-color: var(--animation-color);
+  background-image: url("../img/index/modal/check.svg");
 }
 
 .modal-btn {
